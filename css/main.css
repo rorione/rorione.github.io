@@ -1,0 +1,17 @@
+.head{
+}
+#cnt{
+    height: 200px;
+    margin-top: 150px;
+}
+.myPhoto{
+    width: 200px;
+}
+#main-row{
+    border: 2px dotted black;
+    padding: 10px;
+}
+body{
+    background-image:url(/img/10-12.jpg);
+    background-size: cover;
+}

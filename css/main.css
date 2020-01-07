@@ -2,16 +2,35 @@
 }
 #cnt{
     height: 200px;
-    margin-top: 150px;
+    margin-top: 40%;
 }
 .myPhoto{
     width: 200px;
 }
 #main-row{
-    border: 2px dotted black;
     padding: 10px;
 }
 body{
-    background-image:url(/img/10-12.jpg);
+    min-height: 100%;
+    background-color: inherit;
+}
+html{
+    background:url(/img/bg.jpeg) center center no-repeat;
     background-size: cover;
+    min-height: 100%;
+    backdrop-filter: blur(2px);
+    -webkit-animation: slide 30s linear infinite;
+}
+h1{
+    color: white !important;
+}
+p{
+    font-size: 20px;
+    color:darkgray;
+}
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -800px 0; }
+    from { background-position: -800px 0; }
+    to { background-position: 0 0; }
 }

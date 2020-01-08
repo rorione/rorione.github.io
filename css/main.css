@@ -1,8 +1,6 @@
-.head{
-}
 #cnt{
     height: 200px;
-    margin-top: 40%;
+    margin-top: 20%;
 }
 .myPhoto{
     width: 200px;
@@ -11,15 +9,14 @@
     padding: 10px;
 }
 body{
-    min-height: 100%;
     background-color: inherit;
 }
 html{
-    background:url(/img/bg.jpeg) center center no-repeat;
+    background:url(../img/bg.jpeg) center center no-repeat;
     background-size: cover;
     min-height: 100%;
-    backdrop-filter: blur(2px);
-    -webkit-animation: slide 30s linear infinite;
+    max-height: 100%;
+    backdrop-filter: blur(4px);
 }
 h1{
     color: white !important;
@@ -28,9 +25,12 @@ p{
     font-size: 20px;
     color:darkgray;
 }
-@-webkit-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: -800px 0; }
-    from { background-position: -800px 0; }
-    to { background-position: 0 0; }
+.link i{
+    color: white !important;
+}
+.link i:hover{
+    color: black !important;
+}
+ p,h1{
+    text-shadow: black 0 0 3px;
 }

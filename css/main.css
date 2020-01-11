@@ -16,10 +16,6 @@ html{
     background-size: cover;
     min-height: 100%;
     max-height: 100%;
-    backdrop-filter: blur(2px);
-    animation: animatedBackground 20s linear infinite alternate;
-    -webkit-animation: animatedBackground 20s linear infinite alternate;
-    -moz-animation: animatedBackground 20s linear infinite alternate;
 }
 h1{
     color: white !important;
@@ -36,11 +32,6 @@ p{
 }
  p,h1{
     text-shadow: white 0 0 10px;
-}
-
-@keyframes animatedBackground {
-    from { background-position: 0 0; }
-    to { background-position: 100% 0; }
 }
 div.col-1{
     margin: 5px !important;

@@ -1,6 +1,8 @@
 #cnt{
-    height: 200px;
     margin-top: 20%;
+    background-color: rgba(70, 130, 180, 0.7);
+    border-radius: 9px;
+    padding-bottom: 5px;
 }
 .myPhoto{
     width: 200px;
@@ -29,9 +31,6 @@ p{
 }
 .link i:hover{
     color: black !important;
-}
- p,h1{
-    text-shadow: white 0 0 10px;
 }
 div.col-1{
     margin: 5px !important;

@@ -1,37 +1,129 @@
-#cnt{
-    margin-top: 20%;
-    background-color: rgba(70, 130, 180, 0.7);
-    border-radius: 9px;
-    padding-bottom: 5px;
+body{
+    
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif !important;
+    color: #272829;
 }
-.myPhoto{
-    width: 200px;
+
+a {
+  color: #149ddd;
 }
+
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+    
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+section {
+    padding: 60px 0;
+}
+
+
+/*-------------------------------------- */
+
+#hero {
+  width: 100%;
+  background: url("../img/bg.jpeg") top center;
+  background-size: cover;
+}
+
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+  margin-left: 10px;
+}
+    
+#hero h1 {
+  margin: 0 0 0px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+#hero p {
+  font-size: 26px;
+  font-family: monospace, sans-serif;
+}
+
+span {
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/*-------------------------------------- */
+
+
 #main-row{
     padding: 10px;
 }
-body{
-    background-color: inherit;
+
+h2, h3 {
+    font-size: 28px;
+    line-height: 130%;
+    font-weight: bold;
+    position: relative;
+    color: #173b6c;
 }
-html{
-    background:url(../img/bg.jpeg) center center no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    max-height: 100%;
-}
-h1{
-    color: white !important;
-}
-p{
-    font-size: 20px;
-    color:black;
-}
+
 .link i{
-    color: white !important;
-}
-.link i:hover{
     color: black !important;
 }
+
+.link i:hover{
+    color: #149ddd!important;
+}
+
 div.col-1{
-    margin: 5px !important;
+    margin: 10px !important;
+}
+
+.img-fluid {
+    border-radius: 50%;
+}
+
+
+
+.blink {
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  animation-duration: 1s;
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  -webkit-animation-duration: 1s;
+}
+ 
+@keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+ 
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
 }
